@@ -12,34 +12,28 @@ body > nav{
     top: 0;
 }
 body > nav > ul{
-    width:10vh;
+    width:20vh;
     text-align: center;
 }
 body > nav > ul > a{
     text-decoration: none;
     line-height: 10vh;
-    color:yellow;
+    color:rgb(255, 255, 0);
     width: 10vh;
 }
 
-/*  */
+body > nav > ul > a:hover {
+    font-size: 20px;
+}
 body > nav > ul > li{
     display: none;
 }
 body >nav > ul.dropdown > li:hover {
-    background-color: aqua;
+    background-color: rgb(38, 75, 75);
     display: block;
 }
-
-body > nav > ul.dropdown > {
-    background-color: beige;
-    flex-direction: column;
-    /* display:none; */
-    position: absolute;
-    width: 10vw;
-}
 body > nav > ul:hover{
-    background-color: yellow;
+    background-color: rgb(0, 0, 0);
     color:black;
 }
 
