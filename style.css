@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *{
     margin: 0;
     padding: 0;
@@ -61,4 +62,74 @@ body > footer{
     bottom: 0;
     width: 100%;
     height:5%;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body > nav{
+    display: flex;
+    height: 10vh;
+    background-color:black;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+body > nav > ul{
+    width:10vh;
+    text-align: center;
+}
+body > nav > ul > a{
+    text-decoration: none;
+    line-height: 10vh;
+    color:yellow;
+    width: 10vh;
+}
+
+/*  */
+body > nav > ul > li{
+    display: none;
+}
+body >nav > ul.dropdown > li:hover {
+    background-color: aqua;
+    display: block;
+}
+
+body > nav > ul.dropdown > {
+    background-color: beige;
+    flex-direction: column;
+    /* display:none; */
+    position: absolute;
+    width: 10vw;
+}
+body > nav > ul:hover{
+    background-color: yellow;
+    color:black;
+}
+/*  */
+body > nav > img{
+    height: auto;
+    width: 50vh;
+    background-color: blueviolet;
+}
+/*  */
+body > nav > a > img{
+    height: 8vh;
+    margin: 1vh;
+}
+body > nav > div > a > img{
+    height: 8vh;
+    margin: 1vh;
+}
+/*  */
+body >main > article > h2{
+    text-align: center;
+}
+body > footer{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height:5%;
+>>>>>>> Stashed changes
 }
