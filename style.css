@@ -13,7 +13,7 @@ body > nav{
     margin: 0;
 }
 body > nav > ul{
-    width:10vh;
+    width:33%;
     text-align: center;
 }
 body > nav > ul > a{
@@ -46,13 +46,17 @@ body > nav > ul:hover{
 /*  */
 body > nav > img{
     height: auto;
-    width: 50vh;
-    background-color: blueviolet;
+    width: 33%;
+    /* background-color: blueviolet; */
 }
 /*  */
 body > nav > a > img{
     height: 8vh;
     margin: 1vh;
+}
+body > nav > div{
+    width: 34%;
+    text-align: center;
 }
 body > nav > div > a > img{
     height: 8vh;
@@ -62,9 +66,29 @@ body > nav > div > a > img{
 body >main > article > h2{
     text-align: center;
 }
+body > main>article{
+    font-size: 20px;
+    background-color: beige;
+}
 body > footer{
+    display: flex;
     text-align: center;
     bottom: 0;
     width: 100%;
-    height:5%;
+    height:20vh;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+body > footer>article{
+}
+body >footer> article>h2{
+    color: yellow;
+}
+#futp{
+    text-align: left;
+    color: yellow
+}
+body > footer > iframe{
+    margin: 10px;
 }
