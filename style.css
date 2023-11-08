@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing:border-box;
 }
+
 body > nav{
     display: flex;
     height: 10vh;
@@ -27,22 +28,9 @@ body > nav > ul > a{
 body > nav > ul > li{
     display: none;
 }
-body >nav > ul.dropdown > li:hover {
-    background-color: aqua;
-    display: block;
-}
 
-body > nav > ul.dropdown > {
-    background-color: beige;
-    flex-direction: column;
-    /* display:none; */
-    position: absolute;
-    width: 10vw;
-}
-body > nav > ul:hover{
-    background-color: yellow;
-    color:black;
-}
+
+
 /*  */
 body > nav > img{
     height: auto;
@@ -62,13 +50,39 @@ body > nav > div > a > img{
     height: 8vh;
     margin: 1vh;
 }
+/* filmik */
+main > article > section{
+    /* width: 100%;
+    position: relative;
+    margin: 50px; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background: rgba(0, 0,0,0.5);
+    color:white;
+    margin-bottom: 100px;
+    padding:200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height:50vh;
+}
+.video-bg{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
 /*  */
 body >main > article > h2{
     text-align: center;
 }
 body > main>article{
     font-size: 20px;
-    background-color: beige;
 }
 body > footer{
     display: flex;
