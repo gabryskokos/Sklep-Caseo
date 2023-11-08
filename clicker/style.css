@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+body > h1 {
+    color: #b07418;
+    text-align: center;
+    font-size: 54px;
+}
+main {
+    display: flex;
+}
+h2 {
+    display: block;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    color: #b07418;
+    font-size: 50px;
+}
+main > div {
+    display: flex;
+    width: 90%;
+    margin-left: 39.6%;
+}
+main > aside > button {
+    height: 47px;
+    width: 161px;
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+aside {
+    margin: 5vh;
+    width: 10%;
+}
