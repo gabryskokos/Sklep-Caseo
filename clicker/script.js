@@ -30,10 +30,13 @@ window.addEventListener("DOMContentLoaded", ()=> {
         }
     }
    
-    setInterval(function() {
-        wynik = wynik + kursory*wartoscKursora
-        document.getElementById("wynik").innerHTML=wynik;
-    }, 1000);
+    function wynikKursory() {
+        wynik = wynik + kursory * wartoscKursora;
+        document.getElementById("wynik").innerHTML = wynik;
+        setTimeout(wynikKursory, 1000);
+    }
+
+    wynikKursory();
     
     document.getElementById("kursory").innerHTML="Kursory[" + kursory + "] = " + kosztKursora;
     document.querySelector("#kursory").addEventListener("click",() => {
@@ -48,16 +51,19 @@ window.addEventListener("DOMContentLoaded", ()=> {
             kosztJuhasa = Math.round(kosztJuhasa*1.15);
 
             document.getElementById("wynik").innerHTML=wynik;
-            document.getElementById("juhasi").innerHTML="juhasi[" + juhasi + "] = " + kosztJuhasa;
+            document.getElementById("juhasi").innerHTML="Juhasi[" + juhasi + "] = " + kosztJuhasa;
         }
     }
    
-    setInterval(function() {
-        wynik = wynik + juhasi*wartoscJuhasa
-        document.getElementById("wynik").innerHTML=wynik;
-    }, 1000);
+    function wynikJuhasi() {
+        wynik = wynik + juhasi * wartoscJuhasa;
+        document.getElementById("wynik").innerHTML = wynik;
+        setTimeout(wynikJuhasi, 1000);
+    }
+
+    wynikJuhasi();
     
-    document.getElementById("juhasi").innerHTML="juhasi[" + juhasi + "] = " + kosztJuhasa;
+    document.getElementById("juhasi").innerHTML="Juhasi[" + juhasi + "] = " + kosztJuhasa;
     document.querySelector("#juhasi").addEventListener("click",() => {
         kupJuhasa()
     });

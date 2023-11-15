@@ -1,41 +1,78 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
-body{
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; 
 }
-body > h1 {
-    color: #b07418;
-    text-align: center;
-    font-size: 54px;
-}
+
 main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-h2 {
-    display: block;
+
+#tytol {
     text-align: center;
-    height: 5vh;
-    line-height: 5vh;
-    color: #b07418;
-    font-size: 50px;
+    margin-bottom: 20px;
 }
-main > div {
-    display: flex;
-    width: 90%;
-    margin-left: 39.6%;
+
+h1 {
+    color: gold;
+    font-size: 48px;
 }
-main > aside > button {
-    height: 47px;
-    width: 161px;
-    font-size: 17px;
-    margin-bottom: 17px;
+
+h2 {
+    color: gold; 
+    font-size: 32px; 
 }
+
+#oscypek {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#oscypek:active {
+    transform: scale(0.95) rotate(2deg);
+}
+
 aside {
-    margin: 5vh;
-    width: 10%;
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#kursory {
+    background-color: gold;
+    color: black;
+    border: none;
+}
+
+#kursory:active{
+    transform: scale(0.95);
+}
+
+#juhasi {
+    background-color: gold;
+    color: black;
+    border: none;
+}
+
+#juhasi:active{
+    transform: scale(0.95);
 }
