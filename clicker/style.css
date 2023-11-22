@@ -23,12 +23,12 @@ main {
 
 h1 {
     color: #B07418;
-    font-size: 48px;
+    font-size: 58px;
 }
 
 h2 {
     color: #B07418; 
-    font-size: 32px; 
+    font-size: 42px; 
 }
 
 #oscypek {
@@ -40,7 +40,37 @@ h2 {
     transform: scale(0.95) rotate(2deg);
 }
 
-aside {
+aside.ulepszenia {
+    position: absolute;
+    top: 10vh;
+    left: 2vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button.ulepszenieKursora1 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieJuhasa1 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia1 {
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+aside.budynki {
     position: absolute;
     top: 10vh;
     right: 2vh;
@@ -57,14 +87,14 @@ button {
     cursor: pointer;
 }
 
+button:active{
+    transform: scale(0.95);
+}
+
 #kursory {
     background-color: #333333;
     color: #B07418;
     border: 2px solid #B07418;
-}
-
-#kursory:active{
-    transform: scale(0.95);
 }
 
 #juhasi {
@@ -73,6 +103,3 @@ button {
     border: 2px solid #B07418;
 }
 
-#juhasi:active{
-    transform: scale(0.95);
-}
