@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     // wynik
-    var wynik = 99999999999;
+    var wynik = 0;
     var oscypkiNaSekunde;
     window.addEventListener("click", () => {
         oscypkiNaSekunde = wartoscKursora*kursory+wartoscJuhasa*juhasi+wartoscSopy*sopy;
