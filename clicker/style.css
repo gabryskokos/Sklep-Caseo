@@ -31,6 +31,10 @@ h2 {
     font-size: 42px; 
 }
 
+#oscypkiNaSekunde{
+    font-size: 35px;
+}
+
 #oscypek {
     margin-top: 20px;
     cursor: pointer;
@@ -64,6 +68,13 @@ button.ulepszenieJuhasa1 {
     border: 2px solid #B07418;
 }
 
+button.ulepszenieSopy1 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
 button.ulepszenieKlikniecia1 {
     background-color: #333333;
     color: #B07418;
@@ -85,6 +96,9 @@ button {
     padding: 10px 20px;
     font-size: 24px;
     cursor: pointer;
+    width: 200px;
+    height: 70px;
+    text-align: center;
 }
 
 button:active{
@@ -95,11 +109,22 @@ button:active{
     background-color: #333333;
     color: #B07418;
     border: 2px solid #B07418;
+    display: block;
 }
 
 #juhasi {
     background-color: #333333;
     color: #B07418;
     border: 2px solid #B07418;
+    display: none;
 }
+
+#sopy {
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+    display: none;
+}
+
+
 
