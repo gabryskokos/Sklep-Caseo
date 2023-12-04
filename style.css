@@ -1,56 +1,171 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-
-body > nav{
-    display: flex;
-    height: 10vh;
-    background-color:black;
-    justify-content: space-around;
+ /* ======================Pasek nawigacyjny=================  */
+nav {
+    background-color: black;
+    color: gold;
+    height: 15vh;
     position: sticky;
     top: 0;
     margin: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    width: 100%;
+    box-shadow: 0 20px 20px -20px rgba(0,0,0,1)
 }
-body > nav > ul{
-    width:33%;
-    text-align: center;
-}
-body > nav > ul > a{
+/* body > nav > ul >li > a{
     text-decoration: none;
-    line-height: 10vh;
+    line-height: 15vh;
     color:yellow;
     width: 10vh;
-}
-
-/*  */
+    font-size: 20px
+} */
 body > nav > ul > li{
+    /* border:white solid; */
+}
+nav a {
+    text-decoration: none;
+    color: #033;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+nav ul.dropdown {
+    background-color: rgba(170, 204, 204, 0.9);
+    flex-direction: column;
     display: none;
+    position: absolute;
+    width: 15vw;
 }
-
-
-
-/*  */
-body > nav > img{
-    height: auto;
-    width: 33%;
-    /* background-color: blueviolet; */
-}
-/*  */
-body > nav > a > img{
-    height: 8vh;
-    margin: 1vh;
-}
-body > nav > div{
-    width: 34%;
+nav ul.dropdown > li:hover {
+    background-color: #9aa;
+  }
+nav ul.dropdown > li a {
+    display: block;
     text-align: center;
 }
-body > nav > div > a > img{
-    height: 8vh;
-    margin: 1vh;
+nav > ul {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-evenly;
+    align-items: center;
 }
-/* filmik */
+nav > ul > li {
+    height: 15vh;
+    width: 20%;
+    line-height: auto;
+    margin: 0;
+    padding:0;
+}
+/* nav > ul > li > a {
+    display: block;
+    text-align: center;
+    width: 10vw;
+    height: 15vh;
+} */
+  /* nav > ul > li:hover {
+    background-color: #acc;
+} */
+nav > ul > li:hover ul.menu {
+    display: block;
+    
+}
+
+
+.menu {
+    display: block;
+    margin: 5vh auto;
+    position: relative;
+    width: 200px;
+  }
+  
+  .menu > li > a {
+    background: black;
+    color: gold;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  .menu ul {
+    background: gold;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    top: 35px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.menu li > ul >li{
+    height: auto;
+    margin:auto;
+    font-weight: bold;
+}
+  
+  .menu li:hover ul {
+    height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .menu ul a {
+    color: #000;
+    display: block;
+    padding: 5px 20px;
+  }
+
+
+
+body > nav > ul > li > a > img{
+    height: 15vh;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    /* background-color: blueviolet; */
+}
+body > nav > ul > li > a {
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo {
+    margin-left: 15vh;
+    margin-right: 15vh;
+    
+}
+
+#zal{
+    margin-left: 20vh;
+    transition: all .2s ease-in-out;
+}
+#zal:hover {
+     transform: scale(1.1); 
+}
+#kos{
+    transition: all .2s ease-in-out;
+}
+#kos:hover {
+     transform: scale(1.1); 
+}
+
+body > nav > ul > li >a{
+    height: 15vh;
+    margin:0;
+    padding: 0;
+
+}
+
+/*===================== filmik========================= */
 main > article > section{
     /* width: 100%;
     position: relative;
@@ -84,6 +199,16 @@ body >main > article > h2{
 body > main>article{
     font-size: 20px;
 }
+/* ======================== O NAS ============================== */
+
+
+
+
+
+
+
+
+/* ============================== STOPKA ================================== */
 body > footer{
     display: flex;
     text-align: center;
@@ -94,6 +219,7 @@ body > footer{
     background-color: black;
     
 }
+
 body > footer>article{
 }
 body >footer> article>h2{
@@ -106,3 +232,5 @@ body >footer> article>h2{
 body > footer > iframe{
     margin: 10px;
 }
+
+

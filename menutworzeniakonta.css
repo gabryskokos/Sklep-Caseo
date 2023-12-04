@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav {
+    background-color: black;
+    color: gold;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/* body > nav > ul >li > a{
+    text-decoration: none;
+    line-height: 15vh;
+    color:yellow;
+    width: 10vh;
+    font-size: 20px
+} */
+body > nav > ul > li{
+    /* border:white solid; */
+}
+nav a {
+    text-decoration: none;
+    color: #033;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+nav ul.dropdown {
+    background-color: rgba(170, 204, 204, 0.9);
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    width: 15vw;
+}
+nav ul.dropdown > li:hover {
+    background-color: #9aa;
+  }
+nav ul.dropdown > li a {
+    display: block;
+    text-align: center;
+}
+nav > ul {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav > ul > li {
+    height: 15vh;
+    width: 20%;
+    line-height: auto;
+    margin: 0;
+    padding:0;
+}
+/* nav > ul > li > a {
+    display: block;
+    text-align: center;
+    width: 10vw;
+    height: 15vh;
+} */
+  /* nav > ul > li:hover {
+    background-color: #acc;
+} */
+nav > ul > li:hover ul.menu {
+    display: block;
+    
+}
+
+
+.menu {
+    display: block;
+    margin: 5vh auto;
+    position: relative;
+    width: 200px;
+  }
+  
+  .menu > li > a {
+    background: black;
+    color: gold;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  .menu ul {
+    background: gold;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    top: 35px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.menu li > ul >li{
+    height: auto;
+    margin:auto;
+    font-weight: bold;
+}
+  
+  .menu li:hover ul {
+    height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .menu ul a {
+    color: #000;
+    display: block;
+    padding: 5px 20px;
+  }
+
+
+
+body > nav > ul > li > a > img{
+    height: 15vh;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    /* background-color: blueviolet; */
+}
+body > nav > ul > li > a {
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo {
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+#zal{
+    margin-left: 20vh;
+    transition: all .2s ease-in-out;
+}
+#zal:hover {
+     transform: scale(1.1); 
+}
+#kos{
+    transition: all .2s ease-in-out;
+}
+#kos:hover {
+     transform: scale(1.1); 
+}
+body > nav > ul > li >a{
+    height: 15vh;
+    margin:0;
+    padding: 0;
+
+}
+body{
+    background-image: url('./tlologowania.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+body main{
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;    
+}
+.dane {
+    background-color: gold;
+    padding-left: 12px;
+    padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dane h2 {
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dane-szczegol {
+    margin-bottom: 15px;
+}
+
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        margin-left: 20vw;
+        margin-right: 20vw;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #CBA135;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #B07418;
+    }
+    
+      
