@@ -1,0 +1,122 @@
+/* Resetowanie domyślnych styli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav {
+    background-color: black;
+    color: gold;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: #033;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+nav ul.dropdown {
+    background-color: rgba(170, 204, 204, 0.9);
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    width: 15vw;
+}
+nav ul.dropdown > li:hover {
+    background-color: #9aa;
+  }
+nav ul.dropdown > li a {
+    display: block;
+    text-align: center;
+}
+nav > ul {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav > ul > li {
+    height: 15vh;
+    width: 20%;
+    line-height: auto;
+    margin: 0;
+    padding:0;
+}
+nav > ul > li:hover ul.menu {
+    display: block;
+    
+}
+
+  /* Podstawowe style dla całej strony */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    color: gold;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .koszyk-info,
+  .podsumowanie {
+    text-align: center;
+  }
+  
+  .koszyk-info h2,
+  .podsumowanie h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #ilosc-produktow,
+  #lista-produktow,
+  #ilosc {
+    color: #ccc;
+  }
+  
+  .podsumowanie-liczba {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #kod-rabatowy,
+  button {
+    margin-top: 10px;
+    padding: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: gold;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
