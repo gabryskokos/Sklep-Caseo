@@ -75,10 +75,73 @@ button.ulepszenieSopy1 {
     border: 2px solid #B07418;
 }
 
+button.ulepszenieKursora2 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieJuhasa2 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieSopy2 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
 button.ulepszenieKlikniecia1 {
     background-color: #333333;
     color: #B07418;
     border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia2 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia3 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia4 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia5 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia6 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieKlikniecia7 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+    font-size: 20px;
 }
 
 aside.budynki {
