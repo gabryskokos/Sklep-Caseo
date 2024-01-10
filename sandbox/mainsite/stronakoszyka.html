@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Koszyk produktów - CASEO</title>
+  <link rel="stylesheet" href="stronakoszyka.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+        <li>
+            <ul class="menu">
+                <li>
+                  <a href="#">MENU</a>
+                  
+                  <ul>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </li>
+        <li></li>
+        <li>
+            <a href="#"><img src="./oscypek.svg" id="logo"></a>
+        </li>
+        <li id="zaloguj">
+            <a href="menulogowania.html"><img src="./zaloguj.svg" id="zal"></a>
+        </li>
+        <li id="koszyk">
+            <a href="menutworzeniakonta.html"><img src="./koszyk.svg" id="kos"></a>
+        </li>
+    </ul>
+</nav>
+  <main>
+    <section class="koszyk-info">
+      <h2>Twój koszyk</h2>
+      <div id="ilosc-produktow">
+        <p>Ilość produktów: <span id="ilosc">0</span></p>
+        <p>Produkty: <span id="lista-produktow">Brak produktów</span></p>
+      </div>
+    </section>
+
+    <section class="podsumowanie">
+      <div class="podsumowanie-liczba">
+        <h2>Łączna cena:</h2>
+        <p id="cena-produktow">0 zł</p>
+        <input type="text" id="kod-rabatowy" placeholder="Wprowadź kod rabatowy">
+        <button onclick="applyCoupon()">Zastosuj kod</button>
+        <button onclick="zlozZamowienie()">Złóż zamówienie</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>uOscypi robione z pasji</p>
+  </footer>
+</body>
+</html>
