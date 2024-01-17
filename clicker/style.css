@@ -95,6 +95,27 @@ button.ulepszenieSopy2 {
     color: #B07418;
     border: 2px solid #B07418;
 }
+
+button.ulepszenieKursora3 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieJuhasa3 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
+
+button.ulepszenieSopy3 {
+    display: none;
+    background-color: #333333;
+    color: #B07418;
+    border: 2px solid #B07418;
+}
 button.ulepszenieKlikniecia1 {
     background-color: #333333;
     color: #B07418;
