@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oficjalna strona Caseo – Luksusowe Oscypki</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./oscypek.svg">
+    <link rel="icon" href="../grafiki/oscypek.svg">
     <script src="https://kit.fontawesome.com/7a7898750c.js" crossorigin="anonymous"></script>
 </head>
+<script>
+    function redirectToAnotherPage() {
+      // Zmiana lokalizacji strony na inną URL
+      window.location.href = '../stronaproduktu/stronaproduktu.html';
+    }
+</script>
 <body>
     <header>
 
@@ -31,13 +37,13 @@
             </li>
             <li></li>
             <li>
-                <a href="#"><img src="./oscypek.svg" id="logo"></a>
+                <a href="index.html"><img src="../grafiki/oscypek.svg" id="logo"></a>
             </li>
             <li id="zaloguj">
-                <a href="logowanie.html"><img src="./zaloguj.svg" id="zal"></a>
+                <a href="../stronalogowania/logowanie.html"><img src="../grafiki/zaloguj.svg" id="zal"></a>
             </li>
             <li id="koszyk">
-                <a href="stronakoszyka.html"><img src="./koszyk.svg" id="kos"></a>
+                <a href="../stronakoszyka/stronakoszyka.html"><img src="../grafiki/koszyk.svg" id="kos"></a>
             </li>
         </ul>
     </nav>
@@ -45,7 +51,7 @@
         <article>
             <section id="filmik">
                 <video autoplay loop muted plays-inline class="video-bg">
-                    <source src="../dousuniecia.mp4" type="video/mp4">
+                    <source src=".../dousuniecia.mp4" type="video/mp4">
                 </video>
                 <div class="content">
                     <h1>Oscypki najlepszej jakości</h1>
@@ -66,32 +72,32 @@
 
                 <div class="gallery">
                     <div class="content2">
-                        <img src="oscypek1.png">
+                        <img src="../grafiki/oscypek1.png">
                         <h3>Gołka średnia biała </h3>
                         <p class="pp">Jakis opis sie jebnie</p>
                         <h6>10.00$</h6>
-                        <button class="buy-1">Kup teraz</button>
+                        <button class="buy-1" onclick="redirectToAnotherPage()" >Kup teraz</button>
                     </div>
 
                     <div class="content2">
-                        <img src="oscypek2.png">
+                        <img src="../grafiki/oscypek2.png">
                         <h3>Oscypek2</h3>
                         <p class="pp">Jakis opis sie jebnie</p>
                         <h6>10.00$</h6>
-                        <button class="buy-2">Kup teraz</button>
+                        <button class="buy-2" onclick="redirectToAnotherPage()">Kup teraz</button>
                     </div>
 
                     <div class="content2">
-                        <img src="oscypek3.png">
+                        <img src="../grafiki/oscypek3.png">
                         <h3>Korboce wędzone</h3>
                         <p class="pp">Jakis opis sie jebnie</p>
                         <h6>10.00$</h6>
-                        <button class="buy-3">Kup teraz</button>
+                        <button class="buy-3" onclick="redirectToAnotherPage()">Kup teraz</button>
                     </div>
                 </div>
 
              </section>
-             <a href="../clicker/clicker.html">clicker</a>
+             <a href="./clicker/clicker.html">clicker</a>
         </article>    
         <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ducimus quas, ratione eos sed reprehenderit aspernatur, dolor sapiente consequuntur eum ut voluptas illum at quidem laudantium. Dolor, ipsum eos?
         Consequuntur, aut. Placeat, eligendi? Libero doloribus facilis id error aliquid hic, reiciendis sunt velit minima beatae minus ratione quaerat expedita veniam vel et? Numquam nisi voluptate sint ratione eius ipsam.

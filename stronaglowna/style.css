@@ -212,7 +212,7 @@ body > main>article{
     position: relative;
     overflow: hidden;
     min-height:50vh;
-    background-image: url('./tlologowania.jpg');
+    background-image: url('../grafiki/tlologowania.jpg');
     
 }
 
