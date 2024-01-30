@@ -7,13 +7,16 @@
   <title>Oficjalna strona Caseo - Luksusowe Oscypki</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Concert+One&family=Dokdo&family=Gamja+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="../0_Graficzki/oscypek.svg">
   <link rel="stylesheet" href="logowanie.css">
   <script src="./logowanie.js"></script>  
   <script src="https://kit.fontawesome.com/7a7898750c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- TŁO -->
   <div class="tlo">
     <div class="tlo-slide">
       <img src="../0_Graficzki/tlologowania.jpg" />
@@ -22,10 +25,12 @@
       <img src="../0_Graficzki/tlologowania.jpg" />
     </div>
   </div>
+  
+  
   <!-- LOGOWANIE -->
   <section class="logowanie">
     <div class="rozmazanetlo"></div>
-    <div class="glownybox">
+    <div class="boxlogowania">
       <div class="wprowadzanie">
         <form action="">
           <h1 id="witoj"><i>WITOJ W CASEO</i></h1> 
@@ -39,36 +44,87 @@
             <label for="">Nazwa</label>
           </div>
           <div class="inputbox">
-            <input type="password" id="passwordInput" required>
+            <input type="password" id="logowaniehaslo" required>
             <i class="fa-regular fa-eye-slash" id="eyeicon-lock"></i>
             <i class="fa-solid fa-lock"></i>
             <label for="">Hasło</label>
           </div>
           <div class="forget">
-            <label for=""><input type="checkbox"> Zapamiętaj mnie  | <b><a href="../Resethasła/resethasla.html"> Zapomniałem hasła</a></b></label>
+            <label for=""><input type="checkbox"> Zapamiętaj mnie  | <b><a href="#"> Zapomniałem hasła</a></b></label>
           </div>
           <button id="zaloguj">Zaloguj</button>
           <div class="register">
-            <p>Nie masz konta? <b><a href="../Rejestracja/rejestracja.html">Zarejestruj się</a></p></b>
+            <p>Nie masz konta? <b><a href="#" id="przjsciedoprawej">Zarejestruj się</a></p></b>
           </div>
         </form>
       </div>
     </div>
   </section>
 
+
   <!-- REJESTRACJA -->
-  <!-- <section class="rejestracja">
+  <section class="rejestracja">
     <div class="boxrejestracji">
       <div class="srodekrejestracji">
         <form action="">
-          <i class="fa-solid fa-arrow-left"></i>
-          <a id="x" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>
+
+
+          
+          <!-- <i id="scolka" class="fa-solid fa-arrow-left"></i> -->
+          <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>
+          
+
+
+          <div class="argu">
+            <h1 id="dlaczego"><i>Dlaczego warto do nas dołączyć: </i></h1> 
+            <i id="ikonkidlaczego" class="fa-solid fa-truck-fast"><b class="argumenty" >Śledż swoją paczke</b></i>
+            <i id="ikonkidlaczego" class="fa-solid fa-dollar-sign"><b class="argumenty" >Korzystaj z rabatów i promocji</b></i>
+            <i id="ikonkidlaczego" class="fa-solid fa-clipboard"><b class="argumenty" >Sprawdzaj poprzednie zamówienia</b></i>
+          </div>
+          
+
+
+          <div class="danerejesrt">
+            <input type="name" required>
+            <label for="">Imię</label>
+          </div>
+          <div class="danerejesrt">
+            <input type="name" required>
+            <label for="">Nazwisko</label>
+          </div>
+          <div class="danerejesrt">
+            <input type="name" required>
+            <label for="">Nazwa ( bedziesz się nią logował )</label>
+          </div>
+          <div class="danerejesrt">
+            <input type="name" required>
+            <label for="">Adres e-mail</label>
+          </div>
+          <div class="danerejesrt">
+            <input type="text" required>
+            <label for="">Numer telefonu</label>
+          </div>
+          <div class="danerejesrt">
+            <input type="password" id="rejestrhaslo" required>
+            <label for="">Hasło</label>
+            <i class="fa-regular fa-eye-slash" id="eyerejestracjahaslo"></i>
+          </div>
+          <div class="danerejesrt">
+            <input type="password" id="rejestrhaslopotw" required>
+            <label for="">Potwierdź hasło</label>
+            <i class="fa-regular fa-eye-slash" id="eyeiconrejestracjapotwhasla"></i>
+          </div>
+
+
+
+          <button id="zaloguj">Załóż konto</button>
+          <div class="register">
+            <p>Masz już konto? <b><a href="#" id="wroczrejestracjilink">Zaloguj się</a></p></b>
+          </div>
         </form>
       </div>
     </div>
-  </section> -->
-
-
+  </section>
 </body>
 </html>
 

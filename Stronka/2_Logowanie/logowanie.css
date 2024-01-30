@@ -67,7 +67,7 @@ section{
   opacity: 0.1;
   filter: blur(60px);
 }
-.glownybox{
+.boxlogowania{
   top: 12vh;
   position: absolute;
   width: 32vw;
@@ -80,6 +80,10 @@ section{
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: 0.2s ease 0.3s;
+}
+.opacity{
+  opacity: 0;
 }
 
 /*=================================== NAPIS ===================================*/
@@ -111,16 +115,17 @@ section{
 }
 .avatar{
   height: 300px;
+  /* height: 28vh; */
   border-radius: 100%;
   border: solid 7px #ffffff;  
-  background: linear-gradient(rgba(255, 238, 192, 0.486), rgba(0, 0, 0, 0.726)), url('../0_Graficzki/juhas.png')no-repeat;
+  background: linear-gradient(rgba(255, 238, 192, 0.486), rgba(0, 0, 0, 0.726));
 }
 
 /*=================================== INPUTY WPROWADZANIE ===================================*/
 .inputbox{
   position: relative;
   margin: 30px 0;
-  width: 310px;
+  width: 15vw;
   border-bottom: 2px solid white;
 }
 .inputbox label{
@@ -136,10 +141,11 @@ section{
 input:focus~label,
 input:valid~label{
   top: -5px;
+  font-size: 12px;
 }
 .inputbox input{
   width: 100%;
-  height: 50px;
+  height: 5vh;
   background: transparent;
   border: none;
   outline: none;
@@ -162,7 +168,7 @@ input:valid~.fa-solid{
   right: -30px;
 }
 
-/*=================================== OKO HASŁA ===================================*/
+/*=================================== OKCZY HASŁA ===================================*/
 .fa-regular{
   z-index: 19;
   opacity: 0;
@@ -237,12 +243,11 @@ input:valid~.fa-regular{
 
 
 /*/////////////////////////////// STRONA GŁÓWNA REJESTRACJI PRAWO //////////////////////////////////*/
-/* .boxrejestracji{
-  right: 10px;
-  top: 115px;
+.boxrejestracji{
+  top: 12vh;
   position: absolute;
-  width: 550px;
-  height: 750px;
+  width: 32vw;
+  height: 76vh;
   background: transparent;
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 65px;
@@ -251,4 +256,90 @@ input:valid~.fa-regular{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-} */
+  transition: transform 1.3s ease;
+  transform: translateX(300%);
+}
+.centered {
+  position: absolute;
+  transform: translate(0%);
+}
+#dlaczego{
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  bottom: 30px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1.4em;
+  color: white;
+  text-shadow: 4px 5px 2.5px rgba(0, 0, 0, 100);
+  text-align: center;
+}
+#ikonkidlaczego{
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: 4vh;
+}
+.argumenty{
+  font-family: 'Caveat';
+  color: white;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.danerejesrt{
+  position: relative;
+  margin: 30px 0;
+  width: 20vw;
+  border-bottom: 2px solid white;
+}
+.danerejesrt label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus~label,
+input:valid~label{
+  top: -5px;
+}
+.danerejesrt input{
+  width: 100%;
+  height: 3vh;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0px 0px 0px 0px;
+  color: white;
+}
+.pokahaslorejest{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+.pokahaslorejest label input{
+  margin-right: 3px;
+}
+.pokahaslorejest label a{
+  color: white;
+  text-decoration: none;
+}
+.pokahaslorejest label a:hover{
+  text-decoration: underline;
+}
+.pokahaslorejest label input{
+  accent-color: white;
+}
+#eyerejestracjahaslo{
+  top: 7px;
+}
+#eyeiconrejestracjapotwhasla{
+  top: 7px;
+}
