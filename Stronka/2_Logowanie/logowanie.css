@@ -80,7 +80,7 @@ section{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: 0.2s ease 0.3s;
+  transition: 0.5s ease 0.3s;
 }
 .opacity{
   opacity: 0;
@@ -263,6 +263,8 @@ input:valid~.fa-regular{
   position: absolute;
   transform: translate(0%);
 }
+
+/*=================================== ARGUMENTY DLACZEGO DOŁĄCZYĆ DO CASEO ===================================*/
 #dlaczego{
   display: flex;
   position: relative;
@@ -287,6 +289,8 @@ input:valid~.fa-regular{
   display: flex;
   position: relative;
 }
+
+/*=================================== INPUTY WPROWADZANIA ===================================*/
 .danerejesrt{
   position: relative;
   margin: 30px 0;
@@ -317,6 +321,8 @@ input:valid~label{
   padding: 0px 0px 0px 0px;
   color: white;
 }
+
+/*=================================== OCZY DO POKAZYWANI HASŁA W REJESTRACJI ===================================*/
 .pokahaslorejest{
   margin: -15px 0 15px;
   font-size: .9em;
@@ -343,3 +349,5 @@ input:valid~label{
 #eyeiconrejestracjapotwhasla{
   top: 7px;
 }
+
+/*/////////////////////////////// STRONA GŁÓWNA RESETU HASŁA LEWO //////////////////////////////////*/
