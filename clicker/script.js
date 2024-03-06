@@ -9,8 +9,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener("click", () => {
-        oscypkiNaSekunde = wartoscKursora * kursory + wartoscJuhasa * juhasi + wartoscSopy * sopy;
+        oscypkiNaSekunde = wartoscKursora * kursory + (wartoscJuhasa*10) * juhasi + (wartoscSopy*10) * sopy;
         document.getElementById("oscypkiNaSekunde").innerHTML = round(oscypkiNaSekunde, 1) + " o/s";
+        zapiszGre();
     });
 
     // ulepszenia
@@ -330,7 +331,7 @@ window.addEventListener("DOMContentLoaded", () => {
     //juhasi
     var juhasi = 0;
     var kosztJuhasa = 100;
-    var wartoscJuhasa = 1;
+    var wartoscJuhasa = 0.1;
 
     function wynikJuhasi() {
         wynik = wynik + juhasi * wartoscJuhasa;
@@ -358,7 +359,7 @@ window.addEventListener("DOMContentLoaded", () => {
     //sopy
     var sopy = 0;
     var kosztSopy = 1000;
-    var wartoscSopy = 10;
+    var wartoscSopy = 1;
 
     function wynikSopy() {
         wynik = wynik + sopy * wartoscSopy;
@@ -385,14 +386,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // aktualizuj wynik co sekunde
     function aktualizujWynik() {
-        wynikKursory();
         wynik = round(wynik, 1);
         wynikJuhasi();
         wynikSopy();
-        setTimeout(aktualizujWynik, 1000);
+        setTimeout(aktualizujWynik, 100);
     }
-    
+    function aktualizujWynik1() {
+        wynikKursory();
+        wynik = round(wynik, 1);
+        zapiszGre();
+        setTimeout(aktualizujWynik1, 1000);
+    }
     aktualizujWynik();
+    aktualizujWynik1();
     
     // klikanie oscypka
     var oscypkiZaKlik = 1;
@@ -403,4 +409,73 @@ window.addEventListener("DOMContentLoaded", () => {
         wynik = wynik + oscypkiZaKlik;
         document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
     });
+
+    function zapiszGre() {
+        var graSave = {
+            wynik: wynik,
+            kursory: kursory,
+            kosztKursora: kosztKursora,
+            wartoscKursora: wartoscKursora,
+            juhasi: juhasi,
+            kosztJuhasa: kosztJuhasa,
+            wartoscJuhasa: wartoscJuhasa,
+            sopy: sopy,
+            kosztSopy: kosztSopy,
+            wartoscSopy: wartoscSopy,
+            Kursoryx2v1: Kursoryx2v1,
+            Juhasix2v1: Juhasix2v1,
+            Sopyx2v1: Sopyx2v1,
+            Kursoryx2v2: Kursoryx2v2,
+            Juhasix2v2: Juhasix2v2,
+            Sopyx2v2: Sopyx2v2,
+            Kursoryx2v3: Kursoryx2v3,
+            Juhasix2v3: Juhasix2v3,
+            Sopyx2v3: Sopyx2v3,
+            Kliknieciex2v1: Kliknieciex2v1,
+            Kliknieciex2v2: Kliknieciex2v2,
+            Kliknieciex2v3: Kliknieciex2v3,
+            Kliknieciex2v4: Kliknieciex2v4,
+            Kliknieciex2v5: Kliknieciex2v5,
+            Kliknieciex2v6: Kliknieciex2v6,
+            Kliknieciex2v7: Kliknieciex2v7,
+        };
+        
+        window.localStorage.setItem("graSave", JSON.stringify(graSave));
+    }
+
+    function wczytajGre() {
+        var saveJSON = localStorage.getItem("graSave");
+        if (saveJSON) {
+            var saveData = JSON.parse(saveJSON);
+
+            wynik = saveData.wynik;
+            kursory = saveData.kursory;
+            kosztKursora = saveData.kosztKursora;
+            wartoscKursora = saveData.wartoscKursora;
+            juhasi = saveData.juhasi;
+            kosztJuhasa = saveData.kosztJuhasa;
+            wartoscJuhasa = saveData.wartoscJuhasa;
+            sopy = saveData.sopy;
+            kosztSopy = saveData.kosztSopy;
+            wartoscSopy = saveData.wartoscSopy;
+            Kursoryx2v1 = saveData.Kursoryx2v1;
+            Juhasix2v1 = saveData.Juhasix2v1;
+            Sopyx2v1 = saveData.Sopyx2v1;
+            Kursoryx2v2 = saveData.Kursoryx2v2;
+            Juhasix2v2 = saveData.Juhasix2v2;
+            Sopyx2v2 = saveData.Sopyx2v2;
+            Kursoryx2v3 = saveData.Kursoryx2v3;
+            Juhasix2v3 = saveData.Juhasix2v3;
+            Sopyx2v3 = saveData.Sopyx2v3;
+            Kliknieciex2v1 = saveData.Kliknieciex2v1;
+            Kliknieciex2v2 = saveData.Kliknieciex2v2;
+            Kliknieciex2v3 = saveData.Kliknieciex2v3;
+            Kliknieciex2v4 = saveData.Kliknieciex2v4;
+            Kliknieciex2v5 = saveData.Kliknieciex2v5;
+            Kliknieciex2v6 = saveData.Kliknieciex2v6;
+            Kliknieciex2v7 = saveData.Kliknieciex2v7;
+            sprawdzPrzycisk();
+        }
+    }
+    wczytajGre();
 });

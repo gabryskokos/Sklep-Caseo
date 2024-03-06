@@ -40,6 +40,10 @@ h2 {
     cursor: pointer;
 }
 
+#oscypek:hover {
+    transform: scale(1.03);
+}
+
 #oscypek:active {
     transform: scale(0.95) rotate(2deg);
 }
@@ -185,10 +189,13 @@ button {
     text-align: center;
 }
 
+button:hover{
+    transform: scale(1.03);
+}
+
 button:active{
     transform: scale(0.95);
 }
-
 #kursory {
     background-color: #333333;
     color: #B07418;
