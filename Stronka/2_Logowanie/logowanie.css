@@ -17,6 +17,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -76,11 +77,8 @@ section{
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 65px;
   backdrop-filter: blur(15px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  transition: 0.5s ease 0.3s;
+  transition: 0.5s ease 0.3s; 
 }
 .opacity{
   opacity: 0;
@@ -89,52 +87,82 @@ section{
 /*=================================== NAPIS ===================================*/
 #witoj{
   display: flex;
-  position: relative;
-  padding-top: 40px;
-  bottom: 30px;
+  justify-content: center;
+  margin-top: 3vh;
   font-family: 'Orbitron', sans-serif;
-  font-size: 2em;
+  font-size: 2vw;
   color: white;
   text-shadow: 4px 5px 2.5px rgba(0, 0, 0, 100);
-  text-align: center;
+
 }
 
 /*=================================== POWRÓT ===================================*/
 #domek{
   scale: 1.4;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  display: contents;
+}
+#scolka-res{
+  position: absolute;
+  scale: 1.4;
+  top: 4.3vh;
+  margin-right: 28vw;
+}
+#scolka-rej{
+  position: absolute;
+  scale: 1.4;
+  top: 4.3vh;
+  margin-right: 28vw;
 }
 
 /*=================================== ZDJĘCIE ===================================*/
 #profilowe{
-  font-size: 2em;
+  display: block;
+  justify-content: center;
   color: white;
   text-align: center;
+  max-width: 100%; 
+  height: auto; 
+
+
 }
 .avatar{
-  height: 300px;
-  /* height: 28vh; */
+  margin-top: 4vh;
+  margin-right: auto;
+  margin-left: auto;
+  height: 27vh;
+  width: 27vh;
+  max-width: 100%; 
   border-radius: 100%;
-  border: solid 7px #ffffff;  
+  border: solid 0.4vw #ffffff;  
   background: linear-gradient(rgba(255, 238, 192, 0.486), rgba(0, 0, 0, 0.726));
 }
 
 /*=================================== INPUTY WPROWADZANIE ===================================*/
+.centrowanielogpass{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+
+
+}
 .inputbox{
   position: relative;
-  margin: 30px 0;
+  margin: 4vh 0;
   width: 15vw;
-  border-bottom: 2px solid white;
+  font-size: 1.2vw;
+  border-bottom: 0.3vh solid white;
 }
 .inputbox label{
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 0.3vw;
   transform: translateY(-50%);
   color: white;
-  font-size: 1em;
+  font-size: 1.2vw;
   pointer-events: none;
   transition: .5s;
 }
@@ -157,15 +185,15 @@ input:valid~label{
 /*=================================== ZNACZKI LUDZIK/KŁUDKA ===================================*/
 .fa-solid{
   position: absolute;
-  right: 10px;
+  right: 0.2vw;
   color: white;
-  font-size: 1.2em;
-  top: 15px;
+  font-size: 1.5vw;
+  top: 1.2vh;
   transition: .5s;
 }
 input:focus~.fa-solid,
 input:valid~.fa-solid{
-  right: -30px;
+  right: -2vw;
 }
 
 /*=================================== OKCZY HASŁA ===================================*/
@@ -175,20 +203,20 @@ input:valid~.fa-solid{
   position: absolute;
   left: 0px;
   color: rgb(255, 255, 255);
-  font-size: 1.2em;
-  top: 17px;
+  font-size: 1.2vw;
+  top: 1.5vh;
   transition: .5s;
 }
 input:focus~.fa-regular,
 input:valid~.fa-regular{
   opacity: 100;
-  left: -35px;
+  left: -2vw;
 }
 
 /*=================================== ZAPAMIETAJ MNIE ZAPOMIAŁEM HASŁA ===================================*/
 .forget{
-  margin: -15px 0 15px;
-  font-size: .9em;
+  margin: -1.4vh 0 3vh;
+  font-size: 0.9vw;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -208,29 +236,37 @@ input:valid~.fa-regular{
 }
 
 /*=================================== CHECKBOX ZAPAMIĘTAJ MNIE ===================================*/
-.inputbox {
-  position: relative;
+.checkboxrozmiar{
+  position: absolute;
+  display: flex;
+  left: 7vw;
+  width: 1.4vw;
+  height: 1.4vh;
+  /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 }
 
 /*=================================== GUZIK ZALOGUJ ===================================*/
 #zaloguj{
-  width: 100%;
-  height: 40px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 16vw;
+  height: 4vh;
   border-radius: 40px;
   background: white;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1vw;
   font-weight: 600;
 }
 
 /*=================================== REJESTRACJA NAPIS ===================================*/
 .register{
-  font-size: .9em;
+  font-size: .9vw;
   color: white;
   text-align: center;
-  margin: 25px 0 10px;
+  margin: 3vh 0 3vh;
 }
 .register p a{
   text-decoration: none;
@@ -259,7 +295,7 @@ input:valid~.fa-regular{
   transition: transform 1.3s ease;
   transform: translateX(300%);
 }
-.centered {
+.centeredrejestr{
   position: absolute;
   transform: translate(0%);
 }
@@ -351,3 +387,23 @@ input:valid~label{
 }
 
 /*/////////////////////////////// STRONA GŁÓWNA RESETU HASŁA LEWO //////////////////////////////////*/
+.boxresetu{
+  top: 12vh;
+  position: absolute;
+  width: 32vw;
+  height: 76vh;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 65px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 1.3s ease;
+  transform: translateX(-300%);
+}
+.centeredreset{
+  position: absolute;
+  transform: translate(0%);
+}

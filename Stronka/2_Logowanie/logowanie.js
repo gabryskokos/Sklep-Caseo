@@ -79,26 +79,58 @@ window.addEventListener('DOMContentLoaded', () => {
     //Wysunięcie okna rejestracji z prawej strony
     document.getElementById("przjsciedoprawej").addEventListener("click", function() {
         var boxRejestracji = document.querySelector('.boxrejestracji');
-        boxRejestracji.classList.toggle('centered'); // Dodajemy klasę 'centered'
+        boxRejestracji.classList.toggle('centeredrejestr'); // Dodajemy klasę 'centeredrejestr'
     });
     //Schowanie okna rejestracji do rpawej strony
     document.getElementById("wroczrejestracjilink").addEventListener("click", function() {
         var boxRejestracji = document.querySelector('.boxrejestracji');
-        boxRejestracji.classList.remove('centered'); // Usuwamy klasę 'centered' aby wrócić do poprzedniego wyglądu
+        boxRejestracji.classList.remove('centeredrejestr'); // Usuwamy klasę 'centeredrejestr' aby wrócić do poprzedniego wyglądu
+    });
+    //Schowanie okna rejestracji do rpawej strony (scołka)
+    document.getElementById("scolka-rej").addEventListener("click", function() {
+        var boxRejestracji = document.querySelector('.boxrejestracji');
+        boxRejestracji.classList.remove('centeredrejestr'); // Usuwamy klasę 'centeredrejestr' aby wrócić do poprzedniego wyglądu
     });
 
 
     //Zniknięcie strony logowania po wyswietleniu okna rejestracji
     document.getElementById("przjsciedoprawej").addEventListener("click", function() {
         var logowanie = document.querySelector('.boxlogowania');
-        logowanie.classList.toggle('opacity'); // Dodajemy klasę 'centered'
+        logowanie.classList.toggle('opacity'); // Dodajemy klasę 'centeredrejestr'
     });
     //Pojawienie sie logowaniu po schowaniu okna rejestracji
     document.getElementById("wroczrejestracjilink").addEventListener("click", function() {
         var logowanie = document.querySelector('.boxlogowania');
-        logowanie.classList.remove('opacity'); // Usuwamy klasę 'centered' aby wrócić do poprzedniego wyglądu
+        logowanie.classList.remove('opacity'); // Usuwamy klasę 'centeredrejestr' aby wrócić do poprzedniego wyglądu
+    });
+    //Pojawienie sie logowaniu po schowaniu okna rejestracji (scołka)
+    document.getElementById("scolka-rej").addEventListener("click", function() {
+        var logowanie = document.querySelector('.boxlogowania');
+        logowanie.classList.remove('opacity'); // Usuwamy klasę 'centeredrejestr' aby wrócić do poprzedniego wyglądu
     });
 
 
 
+    //Wysunięcie okna resetu z prawej strony
+    document.getElementById("przejsciedolewej").addEventListener("click", function() {
+        var boxresetu = document.querySelector('.boxresetu');
+        boxresetu.classList.toggle('centeredreset'); // Dodajemy klasę 'centeredreset'
+    });
+    //Schowanie okna resetu do rpawej strony (scołka)
+    document.getElementById("scolka-res").addEventListener("click", function() {
+        var boxresetu = document.querySelector('.boxresetu');
+        boxresetu.classList.remove('centeredreset'); // Usuwamy klasę 'centeredreset' aby wrócić do poprzedniego wyglądu
+    });
+
+
+    //Zniknięcie strony logowania po wyswietleniu okna resetu
+    document.getElementById("przejsciedolewej").addEventListener("click", function() {
+        var logowanie = document.querySelector('.boxlogowania');
+        logowanie.classList.toggle('opacity'); // Dodajemy klasę 'centeredrejestr'
+    });
+    //Pojawienie sie logowaniu po schowaniu okna resetu
+    document.getElementById("scolka-res").addEventListener("click", function() {
+        var logowanie = document.querySelector('.boxlogowania');
+        logowanie.classList.remove('opacity'); // Usuwamy klasę 'centeredrejestr' aby wrócić do poprzedniego wyglądu
+    });
 });
