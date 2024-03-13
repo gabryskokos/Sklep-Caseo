@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficjalna strona Caseo – Luksusowe Oscypki</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./new.css">
+    <link rel="icon" href="../grafiki/oscypek.svg">
+    <script src="https://kit.fontawesome.com/7a7898750c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav id="nav">
+        <div>
+            <ul class="menu">
+                <li>
+                <a href="#" class="menulogo">MENU</a>
+                
+                <ul>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                    <li><a href="#">Lorem.</a></li>
+                </ul>
+                </li>
+            </ul>
+
+
+        </div>
+        
+        <div class="logo">
+            <a href="#"><img src="../grafiki/oscypek.svg" class="obrazki"></a>
+        </div>
+
+
+        <div>
+            <ul class="prawo">
+                <li>
+                    <!-- <a href="">zaloguj</a> -->
+                    <a href="#"><img src="../grafiki/zaloguj.svg" class="obrazki" id="zal"></a>
+                </li>
+                <li>
+                    <!-- <a href="">koszyk</a> -->
+                    <a href="#"><img src="../grafiki/koszyk.svg" class="obrazki" id="kos" ></a>
+                </li>
+            </ul>
+        </div>
+        <section class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </section>
+
+    </nav>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("nav");
+        window.addEventListener("scroll",function(){
+            var scrollTop = window.pageYOffset || document
+                .documentElement.scrollTop;
+            if(scrollTop > lastScrollTop){
+                navbar.style.top = "-16vh"
+            }
+            else{
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        }
+        )
+    </script>
+    <main>
+        <article>
+            
+            <section id="filmik">
+            <video autoplay loop muted plays-inline class="video-bg">
+                <source src=".../dousuniecia.mp4" type="video/mp4">
+            </video>
+            <div class="content" data-aos="fade-right">
+                <h1>Oscypki najlepszej jakości</h1>
+            </div>
+
+        </section>
+        <section id="onas" >
+            <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">O nas</h2>
+            <p data-aos="zoom-in">Jesteśmy grupą aspirujących uczniów, którzy dążą do polepszenia świata 
+                gastronomicznego. Naszym głównym celem jest utrzymanie najwyższego poziomu
+                w puceniu oscypków. W naszej firmie pielęgnujemy tradycje przy tworzeniu
+                naszych produktów spożywczych. Dzięki naszej pasji i zaangażowaniu,
+                pragniemy podnosić standardy w dziedzinie kulinariów i wprowadzać
+                innowacje, które poprawią jakość jedzenia dla wszystkich.
+            </p>
+        </section>
+        </article>
+        
+    </main>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+    <script src="./new.js"></script>
+</body>
+
+</html>
