@@ -1,4 +1,8 @@
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
+
 
 
 
@@ -32,6 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+    
     // HASŁO REJESTRACJA
     document.querySelector('#eyerejestracjahaslo').addEventListener('click',function(){
         var rejestrhaslo = document.querySelector('#rejestrhaslo');
@@ -51,6 +57,49 @@ window.addEventListener('DOMContentLoaded', () => {
             icon.classList.add("fa-eye-slash");
         }
     });
+
+
+
+    //Dlaczego watro mieć konto argumenty
+
+        //Wysunięcie okna resetu z prawej strony
+        document.getElementById("infodlaczegowartodolaczyc").addEventListener("click", function() {
+            var schowanezebypokazacargu = document.querySelector('.schowanezebypokazacargu');
+            var boxinfodlaczego = document.querySelector('.boxinfodlaczego');
+            schowanezebypokazacargu.classList.toggle('pokazargu'); // Dodajemy klasę 'pokazargu'
+            boxinfodlaczego.classList.toggle('boxinfodlaczegoopaciti'); // Dodajemy klasę 'pokazargu'
+        });
+        //Schowanie okna resetu do rpawej strony (scołka)
+        document.getElementById("scolka-res").addEventListener("click", function() {
+            var schowanezebypokazacargu = document.querySelector('.schowanezebypokazacargu');
+            var boxinfodlaczego = document.querySelector('.boxinfodlaczego');
+            schowanezebypokazacargu.classList.remove('pokazargu'); // Usuwamy klasę 'pokazargu' aby wrócić do poprzedniego wyglądu
+            boxinfodlaczego.classList.remove('boxinfodlaczegoopaciti'); // Usuwamy klasę 'pokazargu' aby wrócić do poprzedniego wyglądu
+        });
+
+
+
+
+        var pierwszeKlikniecie = true;
+
+        function zmienTekst() {
+            var element = document.getElementById('tekst');
+            if (pierwszeKlikniecie) {
+                element.textContent = 'WRÓĆ';
+            } else {
+                element.textContent = 'WIĘCEJ';
+            }
+            pierwszeKlikniecie = !pierwszeKlikniecie;
+        }
+    
+        document.getElementById('tekst').addEventListener('click', zmienTekst);
+
+
+
+
+
+
+
 
 
 

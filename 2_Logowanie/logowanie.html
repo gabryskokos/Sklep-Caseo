@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Concert+One&family=Dokdo&family=Gamja+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="../0_Graficzki/oscypek.svg">
   <link rel="stylesheet" href="logowanie.css">
   <script src="./logowanie.js"></script>  
@@ -37,8 +38,9 @@
           <h1 id="witoj"><i>WITOJ W CASEO</i></h1> 
           <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>
           <div class="avatar">
-            <h2 id="profilowe"><img id="" src="../0_Graficzki/juhas.png"></h2>
+            <h2 id="profilowe"><img id="goralprof" src="../0_Graficzki/juhas.png"></h2>
           </div>
+          <div class="centrowanielogpass">
           <div class="inputbox">
             <input type="name" required>
             <i class="fa-solid fa-user"></i>
@@ -50,8 +52,9 @@
             <i class="fa-solid fa-lock"></i>
             <label for="">Hasło</label>
           </div>
+          </div>
           <div class="forget">
-            <label for=""><input type="checkbox"> Zapamiętaj mnie  | <b><a href="#" id="przejsciedolewej"> Zapomniałem hasła</a></b></label>
+            <label for=""><input type="checkbox" class="checkboxrozmiar"> Zapamiętaj mnie  | <b><a href="#" id="przejsciedolewej"> Zapomniałem hasła</a></b></label>
           </div>
           <button id="zaloguj">Zaloguj</button>
           <div class="register">
@@ -69,14 +72,25 @@
     <div class="boxrejestracji">
       <div class="srodekrejestracji">
         <form action="">
-          <i id="scolka-rej" class="fa-solid fa-arrow-left"></i>
-          <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>      
-          <div class="argu">
-            <h1 id="dlaczego"><i>Dlaczego warto do nas dołączyć: </i></h1> 
-            <i id="ikonkidlaczego" class="fa-solid fa-truck-fast"><b class="argumenty" >Śledż swoją paczke</b></i>
-            <i id="ikonkidlaczego" class="fa-solid fa-dollar-sign"><b class="argumenty" >Korzystaj z rabatów i promocji</b></i>
-            <i id="ikonkidlaczego" class="fa-solid fa-clipboard"><b class="argumenty" >Sprawdzaj poprzednie zamówienia</b></i>
+          <div class="boxinfodlaczego">
+            <div>
+              <form action="">
+              <div class="argu">
+                <i id="ikonkidlaczego" class="fa-solid fa-truck-fast"><b class="argumenty" >Śledż swoją paczke</b></i><br>
+                <i id="ikonkidlaczego" class="fa-solid fa-dollar-sign"><b class="argumenty" >Korzystaj z rabatów i promocji</b></i><br>
+                <i id="ikonkidlaczego" class="fa-solid fa-clipboard"><b class="argumenty" >Sprawdzaj poprzednie zamówienia</b></i><br>
+              </div>
+              </form>
+            </div>
           </div>
+          
+          <h1 id="dlaczego"><i>Dlaczego warto do nas dołączyć?  <br><br><b><a href="#" id="infodlaczegowartodolaczyc"><p id="tekst">WIĘCEJ</p></a></b></i></h1> 
+
+        <div class="impurejest">
+          <i id="scolka-rej" class="fa-solid fa-arrow-left"></i>
+          <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>   
+          
+        <div class="schowanezebypokazacargu">
           <div class="danerejesrt">
             <input type="name" required>
             <label for="">Imię</label>
@@ -111,7 +125,10 @@
           <div class="register">
             <p>Masz już konto? <b><a href="#" id="wroczrejestracjilink">Zaloguj się</a></p></b>
           </div>
-        </form>
+        </div>
+      </div>
+    </form>
+
       </div>
     </div>
   </section>
