@@ -166,7 +166,7 @@ nav > ul > li:hover ul.menu {
     display: block;
     margin: 5vh auto;
     position: relative;
-    width: 200px;
+    width: 30vh;
     z-index: 10;
   }
   
@@ -193,13 +193,13 @@ nav > ul > li:hover ul.menu {
     align-items: center;
 }
 .menu li > ul >li{
-    height: auto;
-    margin:auto;
+    height: 5vh;
+    margin:0;
     font-weight: bold;
 }
   
   .menu li:hover ul {
-    height: 200px;
+    height: 25vh;
     opacity: 1;
     transform: translateY(0);
   }
@@ -214,7 +214,7 @@ nav > ul > li:hover ul.menu {
     margin: 3px 2vh;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
     body{
         overflow-x: hidden;
     }
@@ -236,7 +236,7 @@ nav > ul > li:hover ul.menu {
     }
 
     .prawo li{
-        opacity: 0;
+        opacity: 1;
     }
     .burger{
         display: block;
