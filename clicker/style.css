@@ -38,14 +38,23 @@ h2 {
 #oscypek {
     margin-top: 20px;
     cursor: pointer;
+    background-image: url("./obrazy/11jakis.png");
+    height: 686px;
+    width: 386px;
 }
-
+.number.unselectable {
+    user-select: none;
+    font-size: 35px;
+    color:  black;
+    font-weight: bold;
+    z-index: 99;
+}
 #oscypek:hover {
     transform: scale(1.03);
 }
 
 #oscypek:active {
-    transform: scale(0.95) rotate(2deg);
+    transform: scale(0.96);
 }
 
 aside.ulepszenia {
@@ -216,6 +225,3 @@ button:active{
     border: 2px solid #B07418;
     display: none;
 }
-
-
-

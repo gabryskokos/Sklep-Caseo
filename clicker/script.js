@@ -401,15 +401,71 @@ window.addEventListener("DOMContentLoaded", () => {
     aktualizujWynik1();
     
     // klikanie oscypka
+    var oscypek = document.getElementById("oscypek");
     var oscypkiZaKlik = 1;
-    var oscypek = document.querySelector("#oscypek");
+
 
     document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
     oscypek.addEventListener("click", () => {
         wynik = wynik + oscypkiZaKlik;
         document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
     });
+    oscypek.addEventListener("click", createNumberOnClicker);
 
+    //liczby nad kursorem
+    function createNumberOnClicker(event) {
+        const clicker = document.getElementById("oscypek");
+        const clickerOffset = clicker.getBoundingClientRect();
+        const position = {
+            x: event.pageX - clickerOffset.left,
+            y: event.pageY - clickerOffset.top
+        };
+    
+        const element = document.createElement("div"); 
+        element.textContent = "+" + oscypkiZaKlik;
+        element.classList.add("number", "unselectable"); 
+        element.style.position = "absolute";
+        element.style.left = position.x - 20 + "px"; 
+        element.style.top = position.y + "px";
+    
+        clicker.appendChild(element);
+    
+        function updatePosition() {
+            const cursorOffset = clicker.getBoundingClientRect();
+            position.y--;
+            element.style.top = position.y - 20 + "px";
+            setTimeout(updatePosition, 10); 
+        }
+        
+        function fadeOut(element, duration, finalOpacity, callback) {
+            let opacity = 1;
+        
+            function fade() {
+                opacity -= 50 / duration;
+        
+                if (opacity <= finalOpacity) {
+                    element.style.opacity = finalOpacity;
+                    callback();
+                } else {
+                    element.style.opacity = opacity;
+                    setTimeout(fade, 50);
+                }
+            }
+        
+            fade();
+        }
+
+        fadeOut(element, 1500, 0 , function(){
+            element.remove();
+        })
+        
+        updatePosition();
+        
+        clicker.addEventListener("mouseleave", () => {
+            element.remove();
+        });
+    }
+    //zapisywanie
     function zapiszGre() {
         var graSave = {
             wynik: wynik,
@@ -440,7 +496,7 @@ window.addEventListener("DOMContentLoaded", () => {
             Kliknieciex2v7: Kliknieciex2v7,
         };
         
-        window.localStorage.setItem("graSave", JSON.stringify(graSave));
+        localStorage.setItem("graSave", JSON.stringify(graSave));
     }
 
     function wczytajGre() {
