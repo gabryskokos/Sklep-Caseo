@@ -404,18 +404,17 @@ window.addEventListener("DOMContentLoaded", () => {
     var oscypek = document.getElementById("oscypek");
     var oscypkiZaKlik = 1;
 
-
     document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
-    oscypek.addEventListener("click", () => {
+    oscypek.addEventListener("click", (e) => {
         wynik = wynik + oscypkiZaKlik;
         document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
-    });
-    oscypek.addEventListener("click", createNumberOnClicker);
+        createNumberOnClicker(e);
+        });
+
 
     //liczby nad kursorem
     function createNumberOnClicker(event) {
-        const clicker = document.getElementById("oscypek");
-        const clickerOffset = clicker.getBoundingClientRect();
+        const clickerOffset = oscypek.getBoundingClientRect();
         const position = {
             x: event.pageX - clickerOffset.left,
             y: event.pageY - clickerOffset.top
@@ -428,10 +427,10 @@ window.addEventListener("DOMContentLoaded", () => {
         element.style.left = position.x - 20 + "px"; 
         element.style.top = position.y + "px";
     
-        clicker.appendChild(element);
+        oscypek.appendChild(element);
     
         function updatePosition() {
-            const cursorOffset = clicker.getBoundingClientRect();
+            const cursorOffset = oscypek.getBoundingClientRect();
             position.y--;
             element.style.top = position.y - 20 + "px";
             setTimeout(updatePosition, 10); 
@@ -455,15 +454,16 @@ window.addEventListener("DOMContentLoaded", () => {
             fade();
         }
 
-        fadeOut(element, 1500, 0 , function(){
+        fadeOut(element, 3000, 0 , function(){
             element.remove();
         })
         
         updatePosition();
         
-        clicker.addEventListener("mouseleave", () => {
-            element.remove();
+        oscypek.addEventListener("mouseleave", () => {
+            oscypek.style.transform="scale(1.00)";
         });
+        
     }
     //zapisywanie
     function zapiszGre() {
