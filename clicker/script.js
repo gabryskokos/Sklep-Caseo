@@ -460,11 +460,66 @@ window.addEventListener("DOMContentLoaded", () => {
         
         updatePosition();
         
-        oscypek.addEventListener("mouseleave", () => {
-            oscypek.style.transform="scale(1.00)";
-        });
         
     }
+    
+    //oscypek losowy
+const minInterval = 600000;
+const maxInterval = 720000;
+const displayTime = 5000;
+let czklik = false;
+
+function displayImageWithTimeout() {
+    displayImage();
+}
+
+function displayImage() {
+    const oscypekImage = document.createElement('img');
+    oscypekImage.src = 'obrazy/oscypek.svg';
+    oscypekImage.style.position = 'fixed';
+    oscypekImage.style.top = `${Math.random() * 90}%`;
+    oscypekImage.style.left = `${Math.random() * 90}%`;
+    oscypekImage.style.width = '6vw';
+    oscypekImage.style.height = 'auto';
+    document.body.appendChild(oscypekImage);
+
+    setTimeout(function() {
+       fadeOutAndRemove(oscypekImage);
+    }, displayTime);
+
+    oscypekImage.addEventListener('click', function() {
+        czklik = true;
+        this.remove();
+        oscypkiZaKlik *= 10;
+        setTimeout(function() {
+            oscypkiZaKlik /= 10;
+        }, 180000);
+    });
+}
+
+function fadeOutAndRemove(element) {
+    let opacity = 1;
+    const fadeOutInterval = setInterval(function() {
+        opacity -= 0.1;
+        element.style.opacity = opacity;
+        if(opacity <= 0 && czklik == false) {
+            clearInterval(fadeOutInterval);
+            document.body.removeChild(element);
+            setTimeout(displayImageWithTimeout, getRandomInterval());
+        }
+        else if(czklik == true){
+            clearInterval(fadeOutInterval);
+            setTimeout(displayImageWithTimeout, getRandomInterval());
+            czklik = false;
+        }
+    }, 100);
+}
+
+function getRandomInterval() {
+    return Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
+}
+
+setTimeout(displayImageWithTimeout, getRandomInterval());
     //zapisywanie
     function zapiszGre() {
         var graSave = {

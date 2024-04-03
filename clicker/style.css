@@ -49,10 +49,13 @@ h2 {
     font-weight: bold;
     z-index: 99;
 }
+
 #oscypek:hover {
     transform: scale(1.03);
 }
-
+#oscypek:not(:hover) {
+    transform: scale(1.00);
+}
 #oscypek:active {
     transform: scale(0.96);
 }
