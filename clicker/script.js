@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("click", () => {
         oscypkiNaSekunde = wartoscKursora * kursory + (wartoscJuhasa*10) * juhasi + (wartoscSopy*10) * sopy;
-        document.getElementById("oscypkiNaSekunde").innerHTML = round(oscypkiNaSekunde, 1) + " o/s";
+        document.querySelector("#oscypkiNaSekunde").innerHTML = round(oscypkiNaSekunde, 1) + " o/s";
         zapiszGre();
     });
 
@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKursora1").addEventListener("click", () => {
         if (!Kursoryx2v1 && wynik >= 100) {
             wynik = wynik - 100;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKursora1").style.display = "none";
             wartoscKursora = wartoscKursora * 2;
             Kursoryx2v1 = true;
@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieJuhasa1").addEventListener("click", () => {
         if (!Juhasix2v1 && wynik >= 1000) {
             wynik = wynik - 1000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieJuhasa1").style.display = "none";
             wartoscJuhasa = wartoscJuhasa * 2;
             Juhasix2v1 = true;
@@ -128,7 +128,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieSopy1").addEventListener("click", () => {
         if (!Sopyx2v1 && wynik >= 10000) {
             wynik = wynik - 10000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieSopy1").style.display = "none";
             wartoscSopy = wartoscSopy * 2;
             Sopyx2v1 = true;
@@ -142,7 +142,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKursora2").addEventListener("click", () => {
         if (!Kursoryx2v2 && wynik >= 500) {
             wynik = wynik - 500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKursora2").style.display = "none";
             wartoscKursora = wartoscKursora * 2;
             Kursoryx2v2 = true;
@@ -156,7 +156,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieJuhasa2").addEventListener("click", () => {
         if (!Juhasix2v2 && wynik >= 5000) {
             wynik = wynik - 5000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieJuhasa2").style.display = "none";
             wartoscJuhasa = wartoscJuhasa * 2;
             Juhasix2v2 = true;
@@ -170,7 +170,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieSopy2").addEventListener("click", () => {
         if (!Sopyx2v2 && wynik >= 50000) {
             wynik = wynik - 50000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieSopy2").style.display = "none";
             wartoscSopy = wartoscSopy * 2;
             Sopyx2v2 = true;
@@ -184,7 +184,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKursora3").addEventListener("click", () => {
         if (!Kursoryx2v3 && wynik >= 2500) {
             wynik -= 2500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKursora3").style.display = "none";
             wartoscKursora *= 2;
             Kursoryx2v3 = true;
@@ -198,7 +198,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieJuhasa3").addEventListener("click", () => {
         if (!Juhasix2v3 && wynik >= 25000) {
             wynik -= 25000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieJuhasa3").style.display = "none";
             wartoscJuhasa *= 2;
             Juhasix2v3 = true;
@@ -212,7 +212,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieSopy3").addEventListener("click", () => {
         if (!Sopyx2v3 && wynik >= 250000) {
             wynik -= 250000;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieSopy3").style.display = "none";
             wartoscSopy *= 2;
             Sopyx2v3 = true;
@@ -226,7 +226,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia1").addEventListener("click", () => {
         if (wynik >= 10) {
             wynik = wynik - 10;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia1").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v1 = true;
@@ -237,7 +237,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia2").addEventListener("click", () => {
         if (!Kliknieciex2v2 && wynik >= 100) {
             wynik = wynik - 100;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia2").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v2 = true;
@@ -248,7 +248,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia3").addEventListener("click", () => {
         if (!Kliknieciex2v3 && wynik >= 500) {
             wynik = wynik - 500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia3").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v3 = true;
@@ -259,7 +259,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia4").addEventListener("click", () => {
         if (!Kliknieciex2v4 && wynik >= 2500) {
             wynik = wynik - 2500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia4").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v4 = true;
@@ -270,7 +270,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia5").addEventListener("click", () => {
         if (!Kliknieciex2v5 && wynik >= 12500) {
             wynik = wynik - 12500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia5").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v5 = true;
@@ -281,7 +281,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia6").addEventListener("click", () => {
         if (!Kliknieciex2v6 && wynik >= 62500) {
             wynik = wynik - 62500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia6").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v6 = true;
@@ -292,7 +292,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".ulepszenieKlikniecia7").addEventListener("click", () => {
         if (!Kliknieciex2v7 && wynik >= 312500) {
             wynik = wynik - 312500;
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
             document.querySelector(".ulepszenieKlikniecia7").style.display = "none";
             oscypkiZaKlik = oscypkiZaKlik * 2;
             Kliknieciex2v7 = true;
@@ -307,7 +307,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function wynikKursory() {
         wynik = wynik + kursory * wartoscKursora;
-        document.getElementById("wynik").innerHTML = round(wynik, 1);
+        document.querySelector("#wynik").innerHTML = round(wynik, 1);
     };
 
     function dodajKursor() {
@@ -316,12 +316,12 @@ window.addEventListener("DOMContentLoaded", () => {
             kursory = kursory + 1;
             kosztKursora = Math.round(kosztKursora * 1.15);
             document.querySelector("#juhasi").style.display = "inline-block";
-            document.getElementById("wynik").innerHTML = round(wynik, 1);
-            document.getElementById("kursory").innerHTML = "Kursory[" + kursory + "] = " + kosztKursora;
+            document.querySelector("#wynik").innerHTML = round(wynik, 1);
+            document.querySelector("#kursory").innerHTML = "Kursory[" + kursory + "] = " + kosztKursora;
         };
     };
     
-    document.getElementById("kursory").innerHTML = "Kursory[" + kursory + "] = " + kosztKursora;
+    document.querySelector("#kursory").innerHTML = "Kursory[" + kursory + "] = " + kosztKursora;
     
     document.querySelector("#kursory").addEventListener("click", () => {
         dodajKursor();
@@ -335,7 +335,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function wynikJuhasi() {
         wynik = wynik + juhasi * wartoscJuhasa;
-        document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
+        document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
     }
 
     function dodajJuhasa() {
@@ -344,12 +344,12 @@ window.addEventListener("DOMContentLoaded", () => {
             juhasi = juhasi + 1;
             kosztJuhasa = Math.round(kosztJuhasa * 1.15);
             document.querySelector("#sopy").style.display = "inline-block";
-            document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
-            document.getElementById("juhasi").innerHTML = "Juhasi[" + juhasi + "] = " + kosztJuhasa;
+            document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
+            document.querySelector("#juhasi").innerHTML = "Juhasi[" + juhasi + "] = " + kosztJuhasa;
         }
     }
 
-    document.getElementById("juhasi").innerHTML = "Juhasi[" + juhasi + "] = " + kosztJuhasa;
+    document.querySelector("#juhasi").innerHTML = "Juhasi[" + juhasi + "] = " + kosztJuhasa;
     
     document.querySelector("#juhasi").addEventListener("click", () => {
         dodajJuhasa();
@@ -363,7 +363,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function wynikSopy() {
         wynik = wynik + sopy * wartoscSopy;
-        document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
+        document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
     }
 
     function dodajSope() {
@@ -372,12 +372,12 @@ window.addEventListener("DOMContentLoaded", () => {
             sopy = sopy + 1;
             kosztSopy = Math.round(kosztSopy * 1.15);
 
-            document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
-            document.getElementById("sopy").innerHTML = "Sopy[" + sopy + "] = " + kosztSopy;
+            document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
+            document.querySelector("#sopy").innerHTML = "Sopy[" + sopy + "] = " + kosztSopy;
         }
     }
 
-    document.getElementById("sopy").innerHTML = "Sopy[" + sopy + "] = " + kosztSopy;
+    document.querySelector("#sopy").innerHTML = "Sopy[" + sopy + "] = " + kosztSopy;
     
     document.querySelector("#sopy").addEventListener("click", () => {
         dodajSope();
@@ -401,13 +401,13 @@ window.addEventListener("DOMContentLoaded", () => {
     aktualizujWynik1();
     
     // klikanie oscypka
-    var oscypek = document.getElementById("oscypek");
+    var oscypek = document.querySelector("#oscypek");
     var oscypkiZaKlik = 1;
 
-    document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
+    document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
     oscypek.addEventListener("click", (e) => {
         wynik = wynik + oscypkiZaKlik;
-        document.getElementById("wynik").innerHTML = wynik = round(wynik, 1);
+        document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
         createNumberOnClicker(e);
         });
 
@@ -464,62 +464,63 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     
     //oscypek losowy
-const minInterval = 600000;
-const maxInterval = 720000;
-const displayTime = 5000;
-let czklik = false;
+    const minInterval = 6000;
+    const maxInterval = 7200;
+    const displayTime = 5000;
+    let czklik = false;
 
-function displayImageWithTimeout() {
-    displayImage();
-}
+    function displayImageWithTimeout() {
+       displayImage();
+    }
 
-function displayImage() {
-    const oscypekImage = document.createElement('img');
-    oscypekImage.src = 'obrazy/oscypek.svg';
-    oscypekImage.style.position = 'fixed';
-    oscypekImage.style.top = `${Math.random() * 90}%`;
-    oscypekImage.style.left = `${Math.random() * 90}%`;
-    oscypekImage.style.width = '6vw';
-    oscypekImage.style.height = 'auto';
-    document.body.appendChild(oscypekImage);
+    function displayImage() {
+       const oscypekImage = document.createElement('img');
+       oscypekImage.src = 'obrazy/oscypek.svg';
+       oscypekImage.style.position = 'fixed';
+       oscypekImage.style.top = `${Math.random() * 90}%`;
+       oscypekImage.style.left = `${Math.random() * 90}%`;
+      oscypekImage.style.width = '6vw';
+        oscypekImage.style.height = 'auto';
+        document.body.appendChild(oscypekImage);
 
-    setTimeout(function() {
-       fadeOutAndRemove(oscypekImage);
-    }, displayTime);
-
-    oscypekImage.addEventListener('click', function() {
-        czklik = true;
-        this.remove();
-        oscypkiZaKlik *= 10;
         setTimeout(function() {
-            oscypkiZaKlik /= 10;
-        }, 180000);
-    });
-}
+        fadeOutAndRemove(oscypekImage);
+        }, displayTime);
 
-function fadeOutAndRemove(element) {
-    let opacity = 1;
-    const fadeOutInterval = setInterval(function() {
-        opacity -= 0.1;
-        element.style.opacity = opacity;
-        if(opacity <= 0 && czklik == false) {
-            clearInterval(fadeOutInterval);
-            document.body.removeChild(element);
-            setTimeout(displayImageWithTimeout, getRandomInterval());
-        }
-        else if(czklik == true){
-            clearInterval(fadeOutInterval);
-            setTimeout(displayImageWithTimeout, getRandomInterval());
-            czklik = false;
-        }
-    }, 100);
-}
+        oscypekImage.addEventListener('click', function() {
+            czklik = true;
+            this.remove();
+            oscypkiZaKlik *= 7;
+            setTimeout(function() {
+                oscypkiZaKlik /= 10;
+            }, 90000);
+        });
+    }
 
-function getRandomInterval() {
-    return Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
-}
+    function fadeOutAndRemove(element) {
+        let opacity = 1;
+        const fadeOutInterval = setInterval(function() {
+            opacity -= 0.1;
+            element.style.opacity = opacity;
+            if(opacity <= 0 && czklik == false) {
+                clearInterval(fadeOutInterval);
+                document.body.removeChild(element);
+                setTimeout(displayImageWithTimeout, getRandomInterval());
+            }
+            else if(czklik == true){
+                clearInterval(fadeOutInterval);
+                setTimeout(displayImageWithTimeout, getRandomInterval());
+                czklik = false;
+            }
+        }, 100);
+    }
 
-setTimeout(displayImageWithTimeout, getRandomInterval());
+    function getRandomInterval() {
+        return Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
+    }
+
+    setTimeout(displayImageWithTimeout, getRandomInterval());
+
     //zapisywanie
     function zapiszGre() {
         var graSave = {
