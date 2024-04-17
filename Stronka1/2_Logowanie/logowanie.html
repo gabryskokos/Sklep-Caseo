@@ -72,34 +72,28 @@
     <div class="boxrejestracji">
       <div class="srodekrejestracji">
         <form action="">
-          <h1 id="dlaczego"><i>Dlaczego warto do nas dołączyć? <b><a href="#" id="infodlaczegowartodolaczyc"> WIĘCEJ</a></p></b></i></h1> 
-          <i id="scolka-rej" class="fa-solid fa-arrow-left"></i>
-          <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>      
-          <!-- <div class="argu">
-            <i id="ikonkidlaczego" class="fa-solid fa-truck-fast"><b class="argumenty" >Śledż swoją paczke</b></i>
-            <i id="ikonkidlaczego" class="fa-solid fa-dollar-sign"><b class="argumenty" >Korzystaj z rabatów i promocji</b></i>
-            <i id="ikonkidlaczego" class="fa-solid fa-clipboard"><b class="argumenty" >Sprawdzaj poprzednie zamówienia</b></i>
-          </div> -->
-          
-        <div class="impurejest">
-
-
-
-          <div class="select-menu">
-            <div class="select">
-              <span>Select Płeć</span>
-              <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="options-list">
-              <div class="option">Gazda ON</div>
-              <div class="option">Gaździna ONA</div>
+          <div class="boxinfodlaczego">
+            <div>
+              <form action="">
+              <div class="argu">
+                <div id="ikonkidlaczego" class="fa-solid fa-clipboard"><b class="argumenty" >Sprawdzaj poprzednie zamówienia</b></div><br>
+                <div id="ikonkidlaczego" class="fa-solid fa-tag"><b class="argumenty" >Dostęp do unikalnych promocji</b></div><br>
+                <div id="ikonkidlaczego" class="fa-solid fa-dollar-sign"><b class="argumenty" >Korzystaj z rabatów i promocji</b></div><br>
+                <div id="ikonkidlaczego" class="fa-solid fa-forward-fast"><b class="argumenty" >Szybki proces zamawiania</b></div><br>
+                <div id="ikonkidlaczego" class="fa-solid fa-truck-fast"><b class="argumenty" >Śledż swoją paczke</b></div><br>
+                <div id="ikonkidlaczego" class="fa-solid fa-credit-card"><b class="argumenty" >Karta myCASEO</b></div><br>
+              </div>
+              </form>
             </div>
           </div>
+          
+          <h1 id="dlaczego"><i>Dlaczego warto do nas dołączyć?  <br><br><b><a href="#" id="infodlaczegowartodolaczyc"><p id="tekst">WIĘCEJ</p></a></b></i></h1> 
 
-
-
-
-
+        <div class="impurejest">
+          <i id="scolka-rej" class="fa-solid fa-arrow-left"></i>
+          <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>   
+          
+        <div class="schowanezebypokazacargu">
           <div class="danerejesrt">
             <input type="name" required>
             <label for="">Imię</label>
@@ -130,12 +124,21 @@
             <label for="">Potwierdź hasło</label>
             <i class="fa-regular fa-eye-slash" id="eyeiconrejestracjapotwhasla"></i>
           </div>
-          <button id="zaloguj">Załóż konto</button>
+          
+          <label class="toggle" for="myToggle">
+            <p class="akceptuje">Akceptuję <a href="https://pl.pornhub.com/information/terms"><b class="regulamin"> regulamin </b></a>sklepu Internetowego</p>
+            <input class="toggle__input" name="" type="checkbox" id="myToggle">
+            <div class="toggle__fill"></div> 
+        </label>
+
+          <button id="zaloguj" class="zaluzkonto">Załóż konto</button>
           <div class="register">
             <p>Masz już konto? <b><a href="#" id="wroczrejestracjilink">Zaloguj się</a></p></b>
           </div>
         </div>
-        </form>
+      </div>
+    </form>
+
       </div>
     </div>
   </section>
@@ -150,16 +153,33 @@
           <i id="scolka-res" class="fa-solid fa-arrow-left"></i>
           <a id="domek" href="../1_Home/index.html"><i class="fa-solid fa-house"></i></a>
         </form>
+
+        <h1 id="witoj"><i>Pozwól man sie zweryfikować</i></h1> 
+
+        <div class="inputbox">
+          <input type="name" required>
+          <label for="">Nazwa</label>
+        </div>
+
+        <h1 id="witoj"><i>LUB</i></h1> 
+
+        <div class="inputbox">
+          <input type="email" required>
+          <label for="">E-mail</label>
+        </div>
+
+        <button id="zaloguj">ZRESETUJ</button>
+
       </div>
     </div>
   </section>
+
+
 
 </body>
 </html>
 
 
-
 <!--
-  stronka resetu hasła
   baza danych do logowania
 -->

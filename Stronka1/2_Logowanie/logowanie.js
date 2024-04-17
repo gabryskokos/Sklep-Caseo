@@ -35,27 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // WYBÓR PŁCI 
-    const select = document.querySelector(".select");
-    const options_list = document.querySelector(".options-list");
-    const options = document.querySelectorAll(".option");
-
-    //show & hide options list
-    select.addEventListener("click", () => {
-      options_list.classList.toggle("active");
-      select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
-    });
-
-    //select option
-    options.forEach((option) => {
-      option.addEventListener("click", () => {
-        options.forEach((option) => {option.classList.remove('selected')});
-        select.querySelector("span").innerHTML = option.innerHTML;
-        option.classList.add("selected");
-        options_list.classList.toggle("active");
-        select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
-      });
-    });
 
 
     
@@ -78,6 +57,49 @@ window.addEventListener('DOMContentLoaded', () => {
             icon.classList.add("fa-eye-slash");
         }
     });
+
+
+
+    //Dlaczego watro mieć konto argumenty
+
+        //Wysunięcie okna resetu z prawej strony
+        document.getElementById("infodlaczegowartodolaczyc").addEventListener("click", function() {
+            var schowanezebypokazacargu = document.querySelector('.schowanezebypokazacargu');
+            var boxinfodlaczego = document.querySelector('.boxinfodlaczego');
+            schowanezebypokazacargu.classList.toggle('pokazargu'); // Dodajemy klasę 'pokazargu'
+            boxinfodlaczego.classList.toggle('boxinfodlaczegoopaciti'); // Dodajemy klasę 'pokazargu'
+        });
+        //Schowanie okna resetu do rpawej strony (scołka)
+        document.getElementById("scolka-res").addEventListener("click", function() {
+            var schowanezebypokazacargu = document.querySelector('.schowanezebypokazacargu');
+            var boxinfodlaczego = document.querySelector('.boxinfodlaczego');
+            schowanezebypokazacargu.classList.remove('pokazargu'); // Usuwamy klasę 'pokazargu' aby wrócić do poprzedniego wyglądu
+            boxinfodlaczego.classList.remove('boxinfodlaczegoopaciti'); // Usuwamy klasę 'pokazargu' aby wrócić do poprzedniego wyglądu
+        });
+
+
+
+
+        var pierwszeKlikniecie = true;
+
+        function zmienTekst() {
+            var element = document.getElementById('tekst');
+            if (pierwszeKlikniecie) {
+                element.textContent = 'WRÓĆ';
+            } else {
+                element.textContent = 'WIĘCEJ';
+            }
+            pierwszeKlikniecie = !pierwszeKlikniecie;
+        }
+    
+        document.getElementById('tekst').addEventListener('click', zmienTekst);
+
+
+
+
+
+
+
 
 
 
