@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #333333; 
+    background-image: url('./obrazy/tlo.png');
 }
 
 main {
@@ -22,12 +23,12 @@ main {
 }
 
 h1 {
-    color: #B07418;
+    color: white;
     font-size: 58px;
 }
 
 h2 {
-    color: #B07418; 
+    color: white; 
     font-size: 42px; 
 }
 
@@ -45,7 +46,7 @@ h2 {
 .number.unselectable {
     user-select: none;
     font-size: 35px;
-    color:  black;
+    color:  white;
     font-weight: bold;
     z-index: 99;
 }
@@ -72,112 +73,112 @@ aside.ulepszenia {
 
 button.ulepszenieKursora1 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieJuhasa1 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieSopy1 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKursora2 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieJuhasa2 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieSopy2 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKursora3 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieJuhasa3 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieSopy3 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 button.ulepszenieKlikniecia1 {
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKlikniecia2 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKlikniecia3 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKlikniecia4 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black
 }
 
 button.ulepszenieKlikniecia5 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKlikniecia6 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.ulepszenieKlikniecia7 {
     display: none;
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
     font-size: 20px;
 }
 
@@ -208,23 +209,82 @@ button:hover{
 button:active{
     transform: scale(0.95);
 }
+
+#kursory:hover{
+    transform: scale(1.03);
+}
+
+#kursory:active{
+    transform: scale(0.95);
+}
+
+#juhasi:hover{
+    transform: scale(1.03);
+}
+
+#juhasi:active{
+    transform: scale(0.95);
+}
+
+#sopy:hover{
+    transform: scale(1.03);
+}
+
+#sopy:active{
+    transform: scale(0.95);
+}
 #kursory {
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
-    display: block;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
 }
 
 #juhasi {
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
     display: none;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 #sopy {
-    background-color: #333333;
-    color: #B07418;
-    border: 2px solid #B07418;
     display: none;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+#infoKursory {
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    user-select: none;
+    width: 160px;
+}
+
+#infoJuhasi {
+    display: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    user-select: none;
+    width: 160px;
+}
+
+#infoSopy {
+    display: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    user-select: none;
+    width: 160px;
 }

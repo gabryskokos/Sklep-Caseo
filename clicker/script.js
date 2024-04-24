@@ -315,9 +315,10 @@ window.addEventListener("DOMContentLoaded", () => {
             wynik = round(wynik, 1) - kosztKursora;
             kursory = kursory + 1;
             kosztKursora = Math.round(kosztKursora * 1.15);
+            document.querySelector("#infoJuhasi").style.display = "inline-block";
             document.querySelector("#juhasi").style.display = "inline-block";
             document.querySelector("#wynik").innerHTML = round(wynik, 1);
-            document.querySelector("#kursory").innerHTML = "Kursory[" + kursory + "] = " + kosztKursora;
+            document.querySelector("#infoKursory").innerHTML = "Cena: "+kosztKursora+"<br>Ilość: "+kursory+"<br>Wartość: "+wartoscKursora;
         };
     };
     
@@ -343,9 +344,10 @@ window.addEventListener("DOMContentLoaded", () => {
             wynik = wynik - kosztJuhasa;
             juhasi = juhasi + 1;
             kosztJuhasa = Math.round(kosztJuhasa * 1.15);
+            document.querySelector("#infoSopy").style.display = "inline-block";
             document.querySelector("#sopy").style.display = "inline-block";
             document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
-            document.querySelector("#juhasi").innerHTML = "Juhasi[" + juhasi + "] = " + kosztJuhasa;
+            document.querySelector("#infoJuhasi").innerHTML = "Cena: "+kosztJuhasa+"<br>Ilość: "+juhasi+"<br>Wartość: "+wartoscJuhasa*10;
         }
     }
 
@@ -373,7 +375,7 @@ window.addEventListener("DOMContentLoaded", () => {
             kosztSopy = Math.round(kosztSopy * 1.15);
 
             document.querySelector("#wynik").innerHTML = wynik = round(wynik, 1);
-            document.querySelector("#sopy").innerHTML = "Sopy[" + sopy + "] = " + kosztSopy;
+            document.querySelector("#infoSopy").innerHTML = "Cena: "+kosztSopy+"<br>Ilość: "+sopy+"<br>Wartość: "+wartoscSopy*10;
         }
     }
 
@@ -464,8 +466,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     
     //oscypek losowy
-    const minInterval = 6000;
-    const maxInterval = 7200;
+    const minInterval = 600000;
+    const maxInterval = 720000;
     const displayTime = 5000;
     let czklik = false;
 
@@ -474,12 +476,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayImage() {
-       const oscypekImage = document.createElement('img');
-       oscypekImage.src = 'obrazy/oscypek.svg';
-       oscypekImage.style.position = 'fixed';
-       oscypekImage.style.top = `${Math.random() * 90}%`;
-       oscypekImage.style.left = `${Math.random() * 90}%`;
-      oscypekImage.style.width = '6vw';
+        const oscypekImage = document.createElement('img');
+        oscypekImage.src = 'obrazy/oscypek.svg';
+        oscypekImage.style.position = 'fixed';
+        oscypekImage.style.top = `${Math.random() * 90}%`;
+        oscypekImage.style.left = `${Math.random() * 90}%`;
+        oscypekImage.style.width = '6vw';
         oscypekImage.style.height = 'auto';
         document.body.appendChild(oscypekImage);
 
@@ -520,7 +522,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     setTimeout(displayImageWithTimeout, getRandomInterval());
-
     //zapisywanie
     function zapiszGre() {
         var graSave = {
