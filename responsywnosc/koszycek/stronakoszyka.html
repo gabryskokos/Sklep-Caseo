@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Koszyk produktów - CASEO</title>
+  <link rel="stylesheet" href="stronakoszyka.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div>
+        <ul class="menu">
+            <li>
+            <a href="#" class="menulogo">MENU</a>
+            
+            <ul>
+                <li><a href="../menu/oscypek/oscypek.html">Oscypek</a></li>
+                <li><a href="../menu/bryndza/bryndza.html">Bryndza</a></li>
+                <li><a href="../menu/golka/golka.html">Gołka</a></li>
+                <li><a href="../menu/korboce/korboce.html">Korboce</a></li>
+                <li><a href="../menu/zyntyca/zyntyca.html">Zynytyca</a></li>
+            </ul>
+            </li>
+        </ul>
+
+
+    </div>
+    
+    <div class="logo">
+        <a href="#"><img src="../grafiki/oscypek.svg" class="obrazki"></a>
+    </div>
+
+
+    <div>
+        <ul class="prawo">
+            <li>
+                <!-- <a href="">zaloguj</a> -->
+                <a href="../2_Logowanie/logowanie.html"><img src="../grafiki/zaloguj.svg" class="obrazki" id="zal"></a>
+            </li>
+            <li>
+                <!-- <a href="">koszyk</a> -->
+                <a href="#"><img src="../grafiki/koszyk.svg" class="obrazki" id="kos" ></a>
+            </li>
+        </ul>
+    </div>
+    <section class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </section>
+
+</nav>
+  <main>
+    <section class="koszyk-info">
+      <h2>Twój koszyk</h2>
+      <div id="ilosc-produktow">
+        <p>Ilość produktów: <span id="ilosc">0</span></p>
+        <p>Produkty: <span id="lista-produktow">Brak produktów</span></p>
+      </div>
+    </section>
+
+    <section class="podsumowanie">
+      <div class="podsumowanie-liczba">
+        <h2>Łączna cena:</h2>
+        <p id="cena-produktow">0 zł</p>
+        <input type="text" id="kod-rabatowy" placeholder="Wprowadź kod rabatowy">
+        <button onclick="applyCoupon()">Zastosuj kod</button>
+        <button onclick="zlozZamowienie()">Złóż zamówienie</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Kontakty</h4>
+                <ul>
+                    <li><a href="#">123456789</a></li>
+                    <li><a href="#">kontakt.caseo@caseoindustries.pl</a></li>
+                    <li><a href="#">FAX</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Zamowienia</h4>
+                <ul>
+                    <li><a href="#">Dostawa</a></li>
+                    <li><a href="#">Raty</a></li>
+                    <li><a href="#">Ubezpieczenie</a></li>
+                    <li><a href="#">Zwroty i reklamacje</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Moje konto</h4>
+                <ul>
+                    <li><a href="#">Moje zamowienia</a></li>
+                    <li><a href="#">Paragon/Faktura</a></li>
+                    <li><a href="#">Kupowny rabatowe</a></li>
+                    <li><a href="#">Moje opinie</a></li>
+                    <li><a href="#">Moje reklamacje</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nasze sociale</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
