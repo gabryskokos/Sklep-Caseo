@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./zyntycastyle.css">
+</head>
+<body>
+    <nav id="nav">
+        <div>
+            <ul class="menu">
+                <li>
+                <a href="#" class="menulogo">MENU</a>
+                
+                <ul>
+                    <li><a href="../oscypek/oscypek.html">Oscypek</a></li>
+                    <li><a href="../bryndza/bryndza.html">Bryndza</a></li>
+                    <li><a href="../golka/golka.html">Gołka</a></li>
+                    <li><a href="../korboce/korboce.html">Korboce</a></li>
+                    <li><a href="../zyntyca/zyntyca.html">Zynytyca</a></li>
+                </ul>
+                </li>
+            </ul>
+
+
+        </div>
+        
+        <div class="logo">
+            <a href="../../stronaglowna/stronaglowna.html"><img src="../../grafiki/oscypek.svg" class="obrazki"></a>
+        </div>
+
+
+        <div>
+            <ul class="prawo">
+                <li>
+                    <!-- <a href="">zaloguj</a> -->
+                    <a href="../../2_Logowanie/logowanie.html"><img src="../../grafiki/zaloguj.svg" class="obrazki" id="zal"></a>
+                </li>
+                <li>
+                    <!-- <a href="">koszyk</a> -->
+                    <a href="#"><img src="../../grafiki/koszyk.svg" class="obrazki" id="kos" ></a>
+                </li>
+            </ul>
+        </div>
+        <section class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </section>
+
+    </nav>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("nav");
+        window.addEventListener("scroll",function(){
+            var scrollTop = window.pageYOffset || document
+                .documentElement.scrollTop;
+            if(scrollTop > lastScrollTop){
+                navbar.style.top = "-16vh"
+            }
+            else{
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        }
+        )
+    </script>
+        <script>
+            AOS.init({
+              duration: 3000,
+              once: true,
+            });
+          </script>
+          <script src="./new.js"></script>
+
+
+    <!-- ======================SKEP===================================       -->
+    <section class="shop" id="shop">
+        <div class="container">
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+               
+            </a>
+
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+                
+            </a>
+
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+                
+            </a>
+
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+                
+            </a>
+
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+                
+            </a>
+
+            <a href="../../stronaproduktu/produkt.html" class="box">
+                <img src="../../grafiki/test.jpg" class="obr">
+                <h4>im a product</h4>
+                <h5>20zł</h5>
+                
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Kontakty</h4>
+                    <ul>
+                        <li><a href="#">123456789</a></li>
+                        <li><a href="#">kontakt.caseo@caseoindustries.pl</a></li>
+                        <li><a href="#">FAX</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Zamowienia</h4>
+                    <ul>
+                        <li><a href="#">Dostawa</a></li>
+                        <li><a href="#">Raty</a></li>
+                        <li><a href="#">Ubezpieczenie</a></li>
+                        <li><a href="#">Zwroty i reklamacje</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Moje konto</h4>
+                    <ul>
+                        <li><a href="#">Moje zamowienia</a></li>
+                        <li><a href="#">Paragon/Faktura</a></li>
+                        <li><a href="#">Kupowny rabatowe</a></li>
+                        <li><a href="#">Moje opinie</a></li>
+                        <li><a href="#">Moje reklamacje</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nasze sociale</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
+</html>
